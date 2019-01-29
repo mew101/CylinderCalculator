@@ -6,8 +6,7 @@ namespace CylinderCalculator
     {
         static void Main(string[] args)
         {
-            const double pi = 3.1415926;
-            //Print a greeting message
+            const double pi = Math.PI; // 3.1415926;           
             Console.WriteLine("Cylinder Calculator\n");
 
             Console.WriteLine("Enter a number for height");
@@ -19,8 +18,8 @@ namespace CylinderCalculator
 
             double volume = pi * radius * radius * height;
             double surface = 2 * pi * radius * (radius + height);
-            Console.WriteLine("\nThe volume of the cylinder is" + " " + volume);
-            Console.WriteLine("\nThe surface of the cylinder is" + " " + surface);
+            Console.WriteLine("The volume of the cylinder is" + " " + volume + "\n");
+            Console.WriteLine("The surface of the cylinder is" + " " + surface);
             Console.ReadKey();
         }
 
